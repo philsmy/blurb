@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "blurb"
-  spec.version       = "0.5.9"
-  spec.authors       = ["dlbunker", "eamigo13", "smithworx"]
+  spec.version       = "0.6.0"
+  spec.authors       = ["dlbunker", "eamigo13", "smithworx", "philsmy"]
   spec.email         = ["evan@pattern.com"]
 
   spec.summary       = %q{Ruby gem for the Amazon Advertising API}
@@ -38,7 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "faker", "~> 2.1.0"
 
   spec.add_runtime_dependency "rest-client", "~> 2.0"
-  spec.add_runtime_dependency "oauth2", "~> 1.4.0"
+  spec.add_runtime_dependency 'oauth2', '>= 0.5.0', '< 2.1'
   spec.add_runtime_dependency "activesupport"
 
 end
